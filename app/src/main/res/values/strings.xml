@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Ink</string>
+    <string name="title">Title</string>
+    <string name="category">Category</string>
+    <string name="article_date">Date</string>
+    <string name="view_count">view count</string>
 </resources>
