@@ -1,4 +1,4 @@
-package com.example.ink.data
+package com.example.ink.data.blogpost
 
 import android.os.Parcelable
 import androidx.room.ColumnInfo
