@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#FFFFFF</color>
-<!--    <color name="colorPrimaryDark">#00574B</color>-->
+    <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#B03934</color>
     <color name="card_bg">#f8f6f5</color>
     
 <!--    fonts -->
     <color name="darkFont">#191d1E</color>
-    <color name="greyFont">#95A1A0</color>
+    <color name="greyFont">#20A6A0</color>
     <color name="orangeFont">#F89878</color>
 
 

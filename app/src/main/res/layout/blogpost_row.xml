@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="blogpost"
+            type="com.example.ink.data.blogpost.Blogpost" />
+    </data>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
     android:background="@drawable/card_bg"
     android:layout_margin="8dp"
     android:layout_width="match_parent"
@@ -13,6 +23,7 @@
         android:id="@+id/blog_image"
         android:layout_width="72dp"
         android:layout_height="80dp"
+        android:contentDescription="blogpost image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/blogpost_title"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,7 +86,7 @@
         android:id="@+id/view_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
         android:textColor="@color/greyFont"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -95,13 +106,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_share_black_24dp" />
 
-    <TextView
-        android:id="@+id/author"
+    <ImageView
+        android:id="@+id/delete_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/blogpost_category"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:contentDescription="delete button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_delete_black_24dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
