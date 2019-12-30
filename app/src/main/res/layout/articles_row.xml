@@ -3,86 +3,105 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/card_bg"
     android:layout_margin="8dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/blog_image"
         android:layout_width="72dp"
         android:layout_height="80dp"
-        app:srcCompat="@drawable/ic_travel"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/blogpost_title"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_travel" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/blogpost_category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="@string/category"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/blogpost_title"
+        app:layout_constraintEnd_toEndOf="@+id/blogpost_title"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintStart_toStartOf="@+id/blogpost_title"
+        app:layout_constraintTop_toTopOf="@+id/blog_image" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/blogpost_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="12dp"
-        tools:text="@string/title"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textAllCaps="false"
+        android:textColor="@color/darkFont"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/blogpost_date"
+        app:layout_constraintStart_toEndOf="@+id/blog_image"
+        app:layout_constraintTop_toBottomOf="@+id/blogpost_category"
+        tools:text="@string/title" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/blogpost_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="@string/article_date"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        android:textSize="12sp"
+        android:textColor="@color/greyFont"
+        app:layout_constraintBottom_toBottomOf="@+id/blog_image"
+        app:layout_constraintEnd_toEndOf="@+id/blogpost_title"
+        app:layout_constraintStart_toStartOf="@+id/blogpost_title"
+        app:layout_constraintTop_toBottomOf="@+id/blogpost_title" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/count_image"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView3"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/textView3"
+        android:layout_height="20dp"
+        android:layout_marginStart="124dp"
+        app:layout_constraintBottom_toBottomOf="@+id/blogpost_date"
+        app:layout_constraintStart_toEndOf="@+id/blogpost_date"
+        app:layout_constraintTop_toTopOf="@+id/blogpost_date"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_visibility_black_24dp" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/view_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        tools:text="@string/view_count"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="1.0" />
+        android:textColor="@color/greyFont"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/count_image"
+        app:layout_constraintTop_toTopOf="@+id/count_image"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/view_count" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/share"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.932"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.465"
+        app:layout_constraintStart_toEndOf="@+id/blogpost_title"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_share_black_24dp" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/blogpost_category"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
