@@ -15,14 +15,13 @@ abstract class BlogpostDatabase: RoomDatabase() {
         fun getInstance(context: Context): BlogpostDatabase {
             if (instance == null){
 
-                instance = Room.databaseBuilder(context, BlogpostDatabase::class.java, "blogpost")
+                instance = Room.databaseBuilder(context.applicationContext, BlogpostDatabase::class.java, "blogpost")
                             .allowMainThreadQueries()
                             .build()
-                return instance!!
 
-            }else{
-                return instance!!
+
             }
+            return instance!!
         }
     }
 }

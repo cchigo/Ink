@@ -9,8 +9,6 @@ import kotlinx.android.parcel.Parcelize
 @Entity(tableName = "blogpost")
 @Parcelize
 data class Blogpost (
-    @PrimaryKey(autoGenerate = true)
-    var id: Int =0,
 
     @ColumnInfo(name = "bCategory")
     var category: String?,
@@ -22,12 +20,15 @@ data class Blogpost (
     var date: String?,
 
     @ColumnInfo(name = "bCount")
-    var viewCount: String?,
+    var viewCount: Int?,
 
     @ColumnInfo(name = "bContent")
     var blogContent: String?,
 
     @ColumnInfo(name = "image")
-    var blogImage: String?
+    var blogImage: Int?
 
-): Parcelable
+): Parcelable{
+    @PrimaryKey(autoGenerate = true)
+    var id: Int =0
+}
