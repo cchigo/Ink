@@ -1,4 +1,4 @@
-package com.example.ink.ui.blogList
+package com.example.ink.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

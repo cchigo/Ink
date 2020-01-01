@@ -26,7 +26,7 @@ data class Blogpost (
     var blogContent: String?,
 
     @ColumnInfo(name = "image")
-    var blogImage: Int?
+    var blogImage: String?
 
 ): Parcelable{
     @PrimaryKey(autoGenerate = true)

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_file"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.ink.ui.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/addBlogpostFragment"
+        android:name="com.example.ink.ui.addBlogpost.AddBlogpostFragment"
+        android:label="AddBlogpostFragment" />
+    <fragment
+        android:id="@+id/blogpostFragment"
+        android:name="com.example.ink.ui.blogpost.BlogpostFragment"
+        android:label="fragment_blogpost"
+        tools:layout="@layout/fragment_blogpost" />
+</navigation>
