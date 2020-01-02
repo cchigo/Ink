@@ -7,4 +7,13 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="blog_title_placeholder">How to travel solo</string>
+    <string name="blog_category_placeholder">Travel</string>
+    <string name="content">Learn the basics of using Material Components for Android by building a simple ... Components into an existing Java code base – without starting from scratch.</string>
+    <string name="blog_content_placeholder">
+        Some people shy away from travelling alone, a few embrace it. So, what is it that makes it an attractive option? What are the advantages of going it alone?
+  Well first things first, travelling solo can be very liberating. The itinerary you set and all the decisions you make are yours and yours alone.
+  Thomas Jefferson once said: “One travels more usefully when alone because he reflects more,” and it’s true: you have much more time to contemplate things. A day long visit to one museum? No problem. A long hike on a trail frought with danger? Not an issue. You don’t have to deal with someone else’s mood swings, —nor they with yours.
+    </string>
+    <string name="date_placeholder">1/01/2020</string>
 </resources>
